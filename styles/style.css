@@ -17,4 +17,468 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  background-color: var(--themes-background);
+  color: var(--themes-accent-color);
+  
+  background-image: var(--background-image);
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  border: 2px solid var(--themes-accent-color);
+  padding-top: 7rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  width: clamp(23.438rem, 16.3739rem + 30.1401vw, 43.5rem);
+  background-color: var(--themes-background);
+  margin: auto;
+  margin-top: 5.3%;
+  padding-bottom: 0.7rem;
+  
+
+}
+
+.header-Title {
+  font-family: var(--font-PressStart2P);
+  font-size: 65px;
+  font-style: normal;
+  font-weight: var(--font-weight-Text);
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 22px;
+}
+
+.header-Text {
+  font-family: var(--font-PressStart2P);
+  color: var(--themes-accent-color, #000);
+  font-size: 23px;
+  font-style: normal;
+  font-weight: var(--font-weight-Text);
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.header__theme-menu {
+  font-family: var(--font-PressStart2P);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: var(--font-weight-Text);
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.theme-menu__button {
+  position: relative; 
+  padding: 8px; 
+  margin-left: 20px;
+  margin-bottom: px;
+  background-color: transparent; 
+  border: none; 
+  text-transform: uppercase; 
+  cursor: pointer; 
+  transition: opacity 0.3s ease;
+}
+
+    
+
+
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+  margin-bottom: 3.2rem;
+  border: 2px solid var(--themes-accent-color);
+  width: 696px;
+  height: 30%;
+  margin-top: 5.2%;
+  margin-left: 31.7%;
+  
+  background-color: var(--themes-background);
+}
+
+.card-Title {
+  font-family: var( --font-Inter);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: var(--font-weight-Title);
+  line-height: normal;
+  display: flex;
+  align-self: start;
+  padding: 4px 4px 4px 10px;
+  }
+
+.card-Text {
+  display: flex;
+  color: var(--themes-accent-color);
+  font-family: var(--font-Inter);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: var(--font-weight-Text);
+  line-height: 21px; /* 116.667% */
+  padding: 3.3%;
+  justify-content: center;
+  
+}
+
+.card-Conclusion {
+  display: flex;
+  align-self: flex-start;
+  padding: 3.4%;
+  padding-top: 1%;
+  color: var(--themes-accent-color);
+  font-family: var(--font-Inter);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: var(--font-weight-Text);
+  line-height: 21px; /* 116.667% */
+
+}
+
+.card-Image {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  object-position: ;
+  position: relative;
+  aspect-ratio: 1 / 1.009;
+  border-top: 2px solid var(--themes-accent-color);
+  border-bottom: 2px solid var(--themes-accent-color);
+}
+
+.card-ImageWrapper {
+  position: relative;
+}
+
+
+.card-imageLabel {
+    position: absolute;
+    z-index: 3;
+    top: 0.1rem;
+    right: 10px;
+    margin-top: 30px;
+    margin-right: 15px;
+    font-family: var(--font-PressStart2P);
+    font-size: 12.7px;
+    text-transform: uppercase;
+    color: var(--themes-accent-color);
+    text-shadow: -1px 0 var(--themes-background), 0 1px var(--themes-background), 1px 0 var(--themes-background), 0 -1px var(--themes-background);
+    opacity: 0.5;
+    mix-blend-mode: hard-light;
+}
+
+@supports((text-stroke: 1px var(--themes-background)) or (-webkit-text-stroke: 1px var(--themes-background))) {
+  .card-imageLabel {
+      -webkit-text-stroke: 1px var(--themes-background);
+      text-stroke: 1px var(--themes-background);
+      text-shadow: none;
+  }
+}
+
+
+.card__icon-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background-color: var(--themes-background);
+ 
+  
+}
+
+
+.card__like-button {
+  position: relative;
+  border: 2px solid var(--themes-accent-color);
+  background-color: var(--themes-background);
+  width: 130px;
+  text-align: center;
+  
+  font-size: 90%;
+  font-family: var(--font-PressStart2P);
+  line-height: 1;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.card__like-button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--themes-accent-color);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card__like-button span {
+  position: relative;
+  z-index: 2;
+  mix-blend-mode: difference;
+  color: var(--color-Hover);
+  
+  
+}
+
+.card__like-button:hover::before {
+  transform: scaleX(1);
+}
+
+
+
+
+
+.card-ButtonsWrapper {
+  display: flex;
+  align-self: end;
+  padding: 3.4%;
+  padding-top: 0;
+}
+
+.card-SaveButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--themes-accent-color);
+  font-style: normal;
+  line-height: 90%; /* 12.6px */
+  margin: auto;
+  margin-bottom: 7rem;
+  margin-top: 2rem;
+  background-color: var(--themes-background);
+  border: 2px solid var(--themes-accent-color);
+  font-size: 14px;
+  font-family: var(--font-PressStart2P);
+  font-weight: var(--font-weight-Title);
+  cursor: pointer;
+  width: 21.4rem;
+  height: 3rem;
+}
+
+.card-SaveButton::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--themes-accent-color);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card-SaveButton:hover::after {
+  transform: scaleX(1);
+}
+
+.card-SaveButton span {
+  position: relative;
+  z-index: 2;
+  color: var(--color-Hover);
+  mix-blend-mode: difference;
+}
+
+
+.card-SaveButton > svg {
+  position: relative;
+  fill: var(--themes-accent-color);
+  width: 9.6%;
+  height: 51%;
+  padding-right: 10px;
+
+  
+}
+
+.theme-menu__button {
+  transition: opacity 0.3s ease;
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+    
+}
+
+
+.theme-menu__button:disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.theme-menu__button:disabled::before {
+  content: '▶';
+  position: absolute;
+  animation: arrow 0.5s infinite alternate ease-in-out;
+} 
+
+.theme-menu__button {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+}
+
+.theme-menu__button::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  height: 2px;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  background-color: var(--themes-accent-color);
+  transition: transform 0.3s ease;
+
+}
+
+.theme-menu__button:focus {
+  outline: none;
+  opacity: 0.6;
+}
+
+.theme-menu__button:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.heart-Icon {
+  fill: var(--themes-accent-color);
+}
+
+.dialog-Open {
+  display: flex;
+  color: var(--themes-accent-color);
+  position: fixed;
+  background-color: var(--themes-background);
+  border: 2px solid var(--themes-accent-color);
+  padding: 30px;
+  margin: auto;
+  width: 18%;
+  height: 20%;
+}
+
+.dialog::backdrop {
+  background-color: rgba(0, 0, 0, .75);
+}
+
+.dialog-Title {
+ 
+  font-family: var(--font-PressStart2P);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: var(--font-weight-Text);
+  line-height: 150%; /* 21px */
+  text-transform: uppercase;
+ }
+
+.dialog-Button {
+  position: relative;
+  padding: 10px 37px;
+  background-color: var(--themes-background);
+  border: 2px solid var(--themes-accent-color);
+  font-size: 0.75rem;
+  font-family: var(--font-PressStart2P);
+  cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.dialog-titleWrapper {
+  display: flex;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+.dialog-Open  Svg {
+  padding: 10px;
+  padding-left: 0;
+  padding-right: 20px;
+  fill: var(--themes-accent-color);
+  width: 43%;
+  height: 20%;
+}
+
+.card-SaveButton {
+
+}
+
+
+
+
+
+
+
+
+
+@media (width <= 375px) {
+  
+
+  .card {
+    max-width: 23.41rem;
+    margin-left: 0;
+  }
+
+
+  .header {
+    display: flex;
+    flex-direction: column;
+  
+    margin-top: 6.29rem;
+    padding: 0;
+    padding-top: 27%;
+    padding-bottom: 10%;
+    margin-bottom: 25%;
+  }
+
+  .header-Title {
+    font-size: 3.08rem;
+  }
+
+  .header-Text {
+    font-size: 0.9rem;
+    display: flex;
+    
+  }
+
+  .card-Text {
+    padding: 7%;
+  }
+
+  .card-Conclusion {
+    padding: 1% 7% 7% 7%;
+  }
+
+  .card-ButtonsWrapper {
+    padding: 0% 7% 7% 7%;
+  }
+
+  .card-SaveButton {
+    display: flex;
+    flex-direction: column;
+    height: 4.6rem;
+    gap: 10px;
+  }
+
+  .card-SaveButton > svg {
+    
+    width: 11.9%;
+    height: 42.6%;
+
+  }
+
+  .dialog-Open {
+    width: 100%;
+    height: 30%;
+  }
+
+  
+
 }
