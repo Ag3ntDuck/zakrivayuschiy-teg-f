@@ -19,7 +19,7 @@
   min-block-size: 100dvb;
   background-color: var(--themes-background);
   color: var(--themes-accent-color);
-  
+  font-variation-settings: 'wght' var(--font-wg-main);
   background-image: var(--background-image);
   background-size: cover;
 }
@@ -74,14 +74,14 @@
 }
 
 .theme-menu__button {
-  position: relative; 
-  padding: 8px; 
+  position: relative;
+  padding: 8px;
   margin-left: 20px;
   margin-bottom: px;
-  background-color: transparent; 
-  border: none; 
-  text-transform: uppercase; 
-  cursor: pointer; 
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
   transition: opacity 0.3s ease;
 }
 
@@ -301,7 +301,7 @@
   border: none;
   text-transform: uppercase;
   cursor: pointer;
-    
+  position: relative;
 }
 
 
@@ -316,15 +316,6 @@
   animation: arrow 0.5s infinite alternate ease-in-out;
 } 
 
-.theme-menu__button {
-  position: relative;
-  background-color: transparent;
-  border: none;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: opacity 0.3s ease;
-
-}
 
 .theme-menu__button::after {
   content: '';
@@ -406,11 +397,37 @@
   height: 20%;
 }
 
-.card-SaveButton {
-
+.card:nth-child(1) .card-Image {
+  filter: saturate(1.7);
 }
 
+.card:nth-child(2) .card-Image {
+  filter: sepia(0.4);
+}
 
+.card:nth-child(3) .card-Image {
+  filter: brightness(1.1);
+}
+
+.card:nth-child(4) .card-Image {
+  filter: contrast(0.8);
+}
+
+.card:nth-child(5) .card-Image {
+  filter: hue-rotate(-25deg);
+}
+
+.card:nth-child(6) .card-Image {
+  filter: invert(1) blur(3px);
+}
+
+.card:nth-child(7) .card-Image {
+  filter: grayscale(0.5);
+}
+
+.card:nth-child(8) .card-Image {
+  filter: saturate(1.3);
+}
 
 
 
