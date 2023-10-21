@@ -73,20 +73,6 @@
   text-transform: uppercase;
 }
 
-.theme-menu__button {
-  position: relative;
-  padding: 8px;
-  margin-left: 20px;
-  margin-bottom: px;
-  background-color: transparent;
-  border: none;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: opacity 0.3s ease;
-}
-
-    
-
 
 
 .card {
@@ -296,6 +282,8 @@
 }
 
 .theme-menu__button {
+  padding: 8px;
+  margin-left: 20px;
   transition: opacity 0.3s ease;
   background-color: transparent;
   border: none;
