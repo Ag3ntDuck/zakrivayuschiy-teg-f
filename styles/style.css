@@ -409,8 +409,8 @@
   filter: sepia(0.4) saturate(2) brightness(1.2);
 }
 
-.filter__brightness {
-  filter: brightness(1.1);
+.filter__brightness-invert {
+  filter: brightness(1.1) invert(1);
 }
 
 .filter__contrast-invert {
@@ -418,7 +418,7 @@
 }
 
 .filter__grayscale {
-  filter:  grayscale(0.7);
+  filter: grayscale(0.7);
 }
 
 .filter__invert-blur {
