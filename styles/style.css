@@ -53,6 +53,10 @@
   margin-top: 22px;
 }
 
+.header__title:focus-visible {
+  outline: none;
+}
+
 .header__text {
   font-family: var(--font-family-press-start-2p);
   color: var(--themes-accent-color, #000);

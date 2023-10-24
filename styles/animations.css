@@ -5,8 +5,8 @@
 ✦ theme-light — класс светлой темы
 ✦ like-icon — для svg-иконки анимированного сердца
 ✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card-icon__button — для кнопки, оборачивающей иконку
-✦ card-icon__button — для кнопки, оборачивающей иконку
+✦ heart__icon — для кнопки, оборачивающей иконку
+✦ heart__icon — для кнопки, оборачивающей иконку
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
@@ -55,27 +55,40 @@
   }
 }
 
-.card-icon__button:hover .main__body {
+.heart__icon:hover .main__body {
   opacity: 1;
   fill: var(--themes-accent-color);
   transition: opacity 0.3s ease, fill 0.3s ease;
   transition-delay: 0.05s;
 }
 
-.card-icon__button:hover .core {
+.heart__icon:hover .core {
   opacity: 1;
   fill: var(--themes-accent-color);
   transition: opacity 0.3s ease, fill 0.3s ease;
 }
 
-.card-icon__button:active .main__body {
+.card__icon-button:focus .heart__icon .main__body {
+  opacity: 1;
+  fill: var(--themes-accent-color);
+  transition: opacity 0.3s ease, fill 0.3s ease;
+  transition-delay: 0.05s;
+}
+
+.card__icon-button:focus .heart__icon .core {
+  opacity: 1;
+  fill: var(--themes-accent-color);
+  transition: opacity 0.3s ease, fill 0.3s ease;
+}
+
+.heart__icon:active .main__body {
   opacity: 1;
   fill: var(--color-heart);
   transition: opacity 0.3s ease, fill 0.3s ease;
   transition-delay: 0.05s;
 }
 
-.card-icon__button:active .core {
+.heart__icon:active .core {
   opacity: 1;
   fill: var(--color-heart);
   transition: opacity 0.3s ease, fill 0.3s ease;
@@ -97,12 +110,6 @@
 .like-icon.is-liked .contour {
   fill: var(--color-heart);
   transition: fill 0.1s ease;
-}
-
-.like-icon.is-liked .heart {
-  transform-origin: center;
-  animation: heart-scale 0.3s alternate ease-in;
-  animation-delay: 0.1s;
 }
 
 .like-icon.is-liked .sparks {
