@@ -12,7 +12,6 @@
     --color-contour: #00CC14;
     --color-hover: #00CC14;
     --background-image: repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px), repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px), linear-gradient(to bottom, #007f0c, #004306);
-    
 }
 
 :root.theme-light {
@@ -25,18 +24,13 @@
     --background-image: repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px), repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px), linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 }
 
-
 @media (prefers-color-scheme: dark) {
     :root {
         --themes-accent-color: #00CC14;
         --themes-background: #000;
         --color-contour: #00CC14;
         --color-hover: #00CC14;
-        --background-image: repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px), repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px), linear-gradient(to bottom, #007f0c, #004306);
-        
-    }
-    .icon {
-        fill: red;
+        --background-image: repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px), repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px), linear-gradient(to bottom, #007f0c, #004306);        
     }
 }
 
