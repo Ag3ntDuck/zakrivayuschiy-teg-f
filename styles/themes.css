@@ -30,7 +30,7 @@
         --themes-background: #000;
         --color-contour: #00CC14;
         --color-hover: #00CC14;
-        --background-image: repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px), repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px), linear-gradient(to bottom, #007f0c, #004306);        
+        --background-image: repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px), repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px), linear-gradient(to bottom, #007f0c, #004306);
     }
 }
 

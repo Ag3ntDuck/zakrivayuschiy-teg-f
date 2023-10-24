@@ -173,7 +173,6 @@
   line-height: 90%; /* 12.6px */
   text-transform: uppercase;
   font-family: var(--font-family-press-start-2p);
-  line-height: 1;
   cursor: pointer;
   transition: box-shadow 0.3s ease;
 }
