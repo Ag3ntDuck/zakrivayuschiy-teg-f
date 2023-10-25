@@ -160,42 +160,9 @@
   background-color: var(--themes-background);
 }
 
-
 .card__like-button {
-  position: relative;
-  border: 2px solid var(--themes-accent-color);
-  background-color: var(--themes-background);
   min-width: 130px;
-  text-align: center;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 90%; /* 12.6px */
-  text-transform: uppercase;
-  font-family: var(--font-family-press-start-2p);
-  cursor: pointer;
   transition: box-shadow 0.3s ease;
-}
-
-.card__like-button::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-color: var(--themes-accent-color);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.5s ease-in-out;
-}
-
-.card__like-button span {
-  position: relative;
-  z-index: 2;
-  mix-blend-mode: difference;
-  color: var(--color-hover);
-}
-
-.card__like-button:hover::before {
-  transform: scaleX(1);
 }
 
 .card__buttons-wrapper {
