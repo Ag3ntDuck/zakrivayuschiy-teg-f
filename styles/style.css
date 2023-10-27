@@ -156,14 +156,12 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  border: none;
   background-color: var(--themes-background);
   padding: 0;
   border: 2px solid transparent;
   margin-right: 4px;
   transition: border-color 0.3s ease;
 }
-
 
 .card__like-button {
   position: relative;
