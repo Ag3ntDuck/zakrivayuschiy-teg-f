@@ -287,9 +287,11 @@
 }
 
 .theme-menu__button:focus-visible,
-.card__icon-button:focus-visible,
-.card__like-button:focus-visible,
-.card__save-button:focus-visible {
+.card__icon-button:focus-visible {
+  outline: none;
+}
+
+.animated-button:focus-visible {
   outline: none;
 }
 
