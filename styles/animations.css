@@ -55,19 +55,7 @@
   }
 }
 
-.heart__icon:hover .main__body {
-  opacity: 1;
-  fill: var(--themes-accent-color);
-  transition: opacity 0.3s ease, fill 0.3s ease;
-  transition-delay: 0.05s;
-}
-
-.heart__icon:hover .core {
-  opacity: 1;
-  fill: var(--themes-accent-color);
-  transition: opacity 0.3s ease, fill 0.3s ease;
-}
-
+/* 
 .card__icon-button:focus .heart__icon .main__body {
   opacity: 1;
   fill: var(--themes-accent-color);
@@ -76,6 +64,20 @@
 }
 
 .card__icon-button:focus .heart__icon .core {
+  opacity: 1;
+  fill: var(--themes-accent-color);
+  transition: opacity 0.3s ease, fill 0.3s ease;
+}
+*/
+
+.heart__icon:hover .main__body {
+  opacity: 1;
+  fill: var(--themes-accent-color);
+  transition: opacity 0.3s ease, fill 0.3s ease;
+  transition-delay: 0.05s;
+}
+
+.heart__icon:hover .core {
   opacity: 1;
   fill: var(--themes-accent-color);
   transition: opacity 0.3s ease, fill 0.3s ease;

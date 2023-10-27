@@ -158,6 +158,10 @@
   cursor: pointer;
   border: none;
   background-color: var(--themes-background);
+  padding: 0;
+  border: 2px solid transparent;
+  margin-right: 4px;
+  transition: border-color 0.3s ease;
 }
 
 
@@ -403,6 +407,14 @@
 
 .filter__brightness-saturate-opacity {
   filter: brightness(1.1) saturate(2) opacity(60%);
+}
+
+.card__icon-button:focus {
+  border: 2px solid transparent;
+}
+
+.card__icon-button:focus-visible {
+  border: 2px solid var(--color-contour);
 }
 
 @media (width <= 375px) {
